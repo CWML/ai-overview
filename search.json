@@ -259,6 +259,13 @@
     "text": "Skip to main content\nAI literature tools are good at getting you oriented quickly: what’s been studied, roughly what it found, and which papers to read first. They aren’t a substitute for a structured search, and they shouldn’t be the source you cite. Open and read every paper before you rely on it."
   },
   {
+    "objectID": "pages/literature.html#library-connector",
+    "href": "pages/literature.html#library-connector",
+    "title": "Literature Tools",
+    "section": "In beta: AI search of Yale Library’s catalog",
+    "text": "In beta: AI search of Yale Library’s catalog\nYale Library’s AI Connector lets AI assistants such as Claude and ChatGPT search almost 15 million records in the library catalog and nearly 185,000 in its digital collections. It’s in beta, and the Yale community is invited to test it. It doesn’t search licensed articles or article databases such as JSTOR and EBSCO; use Articles+ or the databases for those. (Library announcement)\n\nGet started: the AI Connector setup site (Yale sign-in).\nFeedback: libraryfeedback@yale.edu"
+  },
+  {
     "objectID": "pages/literature.html#which-tool-for-which-job",
     "href": "pages/literature.html#which-tool-for-which-job",
     "title": "Literature Tools",
@@ -285,13 +292,6 @@
     "title": "Literature Tools",
     "section": "Other tools you may hear about",
     "text": "Other tools you may hear about\nYale doesn’t provide these, so only use them with public information (low-risk data).\n\nAI literature tools Yale doesn’t provide\n\n\nTool\nGood for\nFree option\n\n\n\n\nElicit\nPulling data from papers into tables; screening\nLimited free tier\n\n\nUndermind\nThorough searches on narrow topics\nLimited free tier\n\n\nScite\nSeeing whether later papers support or dispute a finding\nTrial only\n\n\nOpenEvidence\nClinical questions, drawing on guidelines\nFree for US clinicians with an NPI"
-  },
-  {
-    "objectID": "pages/literature.html#in-beta-ai-search-of-yale-librarys-catalog",
-    "href": "pages/literature.html#in-beta-ai-search-of-yale-librarys-catalog",
-    "title": "Literature Tools",
-    "section": "In beta: AI search of Yale Library’s catalog",
-    "text": "In beta: AI search of Yale Library’s catalog\nYale Library’s AI Connector lets AI assistants such as Claude and ChatGPT search almost 15 million records in the library catalog and nearly 185,000 in its digital collections. It’s in beta, and the Yale community is invited to test it. It doesn’t search licensed articles or article databases such as JSTOR and EBSCO; use Articles+ or the databases for those. (Library announcement)\n\nGet started: the AI Connector setup site (Yale sign-in).\nFeedback: libraryfeedback@yale.edu"
   },
   {
     "objectID": "pages/resources.html",
