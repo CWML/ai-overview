@@ -1,0 +1,7 @@
+/* Site-specific additions on top of theme/cwml.scss */
+
+/* Risk-level labels in tables */
+.risk { font-weight: 600; white-space: nowrap; }
+
+/* "Last checked" line under page titles */
+.checked { font-size: 0.9375rem; color: var(--bs-secondary-color); }
