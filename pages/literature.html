@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -364,12 +384,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="checked">
 <p>Last checked: <strong>November 18, 2026</strong>.</p>
 </div>
-<p>AI literature tools are good at getting you oriented quickly: what’s been studied, roughly what it found, and which papers to read first. They aren’t a substitute for a structured search, and they shouldn’t be the source you cite. <strong>Open and read every paper before you rely on it.</strong></p>
+<p>AI literature tools are good at getting you oriented quickly: what’s been studied, roughly what it found, and which papers to read first. They aren’t a substitute for a structured search, and they shouldn’t be the source you cite <span class="citation" data-cites="cwml-evidence-synthesis tay-consensus">[<a href="#ref-cwml-evidence-synthesis" role="doc-biblioref">1</a>, <a href="#ref-tay-consensus" role="doc-biblioref">2</a>]</span>. <strong>Open and read every paper before you rely on it.</strong></p>
 <section id="library-connector" class="level2">
 <h2 class="anchored" data-anchor-id="library-connector">In beta: AI search of Yale Library’s catalog</h2>
-<p>Yale Library’s <strong>AI Connector</strong> lets AI assistants such as Claude and ChatGPT search almost 15 million records in the library catalog and nearly 185,000 in its digital collections. It’s in beta, and the Yale community is invited to test it. It doesn’t search licensed articles or article databases such as JSTOR and EBSCO; use Articles+ or the databases for those. (<a href="https://library.yale.edu/news/yale-librarys-ai-connector-library-sources-now-open-yale-community-testing">Library announcement</a>)</p>
+<p>Yale Library’s <strong>AI Connector</strong> lets AI assistants such as Claude and ChatGPT search almost 15 million records in the library catalog and nearly 185,000 in its digital collections. It’s in beta, and the Yale community is invited to test it. It doesn’t search licensed articles or article databases such as JSTOR and EBSCO; use Articles+ or the databases for those <span class="citation" data-cites="lib-connector-open">[<a href="#ref-lib-connector-open" role="doc-biblioref">3</a>]</span>.</p>
 <ul>
-<li><strong>Which assistant:</strong> Yale doesn’t provide ChatGPT, so a personal ChatGPT account is for public information only. For OpenAI’s models under your Yale account, <a href="../pages/tools.html#clarity">Clarity</a> is the alternative, but the connector doesn’t list Clarity yet; the library has named it only as a possible future option (<a href="https://library.yale.edu/news/yale-library-testing-ai-powered-connection-deeper-searching-library-resources">pilot announcement</a>).</li>
+<li><strong>Which assistant:</strong> Yale doesn’t provide ChatGPT, so a personal ChatGPT account is for public information only <span class="citation" data-cites="yale-tools">[<a href="#ref-yale-tools" role="doc-biblioref">4</a>]</span>. For OpenAI’s models under your Yale account, <a href="../pages/tools.html#clarity">Clarity</a> is the alternative, but the connector doesn’t list Clarity yet; the library has named it only as a possible future option <span class="citation" data-cites="lib-connector-pilot">[<a href="#ref-lib-connector-pilot" role="doc-biblioref">5</a>]</span>.</li>
 <li><strong>Get started:</strong> the <a href="https://yaleedu.sharepoint.com/sites/YaleLibraryConnector">AI Connector setup site</a> (Yale sign-in).</li>
 <li><strong>Feedback:</strong> <a href="mailto:libraryfeedback@yale.edu?subject=AI%20Connector">libraryfeedback@yale.edu</a></li>
 </ul>
@@ -377,7 +397,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="which-tool-for-which-job" class="level2">
 <h2 class="anchored" data-anchor-id="which-tool-for-which-job">Which tool for which job</h2>
 <table class="caption-top table">
-<caption>Matching literature tasks to tools</caption>
+<caption>Matching literature tasks to tools <span class="citation" data-cites="yale-consensus yale-gemini claude-enterprise clarity-update cwml-evidence-synthesis">[<a href="#ref-cwml-evidence-synthesis" role="doc-biblioref">1</a>, <a href="#ref-yale-consensus" role="doc-biblioref">6</a>–<a href="#ref-clarity-update" role="doc-biblioref">9</a>]</span></caption>
 <thead>
 <tr class="header">
 <th>You want to…</th>
@@ -409,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Do a systematic or scoping review</td>
 <td>A librarian, PubMed/Embase/PsycINFO searches, Covidence</td>
-<td><a href="https://library.medicine.yale.edu/">Book a consult</a></td>
+<td><a href="https://library.medicine.yale.edu/evidence-synthesis-literature-reviews">Book a consult</a></td>
 </tr>
 </tbody>
 </table>
@@ -423,30 +443,30 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>None of these AI tools gives reproducible, complete search results. For a systematic, scoping or other formal review, work with a CWML librarian on a documented database search.</p>
+<p>None of these AI tools gives reproducible, complete search results. For a systematic, scoping or other formal review, work with a CWML librarian on a documented database search <span class="citation" data-cites="cwml-evidence-synthesis tay-consensus">[<a href="#ref-cwml-evidence-synthesis" role="doc-biblioref">1</a>, <a href="#ref-tay-consensus" role="doc-biblioref">2</a>]</span>.</p>
 </div>
 </div>
 </section>
 <section id="consensus" class="level2">
 <h2 class="anchored" data-anchor-id="consensus">Consensus</h2>
-<p><a href="https://consensus.app">Consensus</a> searches more than 250 million peer-reviewed papers (from Semantic Scholar, OpenAlex and its own web crawl) and writes an answer with citations. Yale Library is running a year-long trial. (<a href="https://library.yale.edu/news/library-launches-year-long-trial-new-ai-powered-discovery-tool-research">Library announcement</a>, <a href="https://ai.yale.edu/yales-ai-tools-and-resources/consensus">Yale’s Consensus page</a>)</p>
+<p><a href="https://consensus.app">Consensus</a> searches more than 250 million peer-reviewed papers (from Semantic Scholar, OpenAlex and its own web crawl) and writes an answer with citations. Yale Library is running a year-long trial <span class="citation" data-cites="lib-consensus-trial yale-consensus">[<a href="#ref-yale-consensus" role="doc-biblioref">6</a>, <a href="#ref-lib-consensus-trial" role="doc-biblioref">10</a>]</span>.</p>
 <section id="getting-access" class="level3">
 <h3 class="anchored" data-anchor-id="getting-access">Getting access</h3>
 <ul>
-<li>Go to <a href="https://consensus.app">consensus.app</a> and sign up with your Yale email (yale.edu, ynhh.org or ynhh.com) or Yale Google login.</li>
-<li>The Yale trial runs <strong>through December 31, 2026</strong>. Ask the library (<a href="mailto:marx.reference@yale.edu">marx.reference@yale.edu</a>) what happens after that.</li>
-<li><strong>Approved for low-risk data only.</strong> Ask questions about published research. Don’t paste unpublished results, draft manuscripts or participant data.</li>
+<li>Go to <a href="https://consensus.app">consensus.app</a> and sign up with your Yale email (yale.edu, ynhh.org or ynhh.com) or Yale Google login <span class="citation" data-cites="yale-consensus">[<a href="#ref-yale-consensus" role="doc-biblioref">6</a>]</span>.</li>
+<li>The Yale trial runs <strong>through December 31, 2026</strong> <span class="citation" data-cites="yale-consensus lib-consensus-trial">[<a href="#ref-yale-consensus" role="doc-biblioref">6</a>, <a href="#ref-lib-consensus-trial" role="doc-biblioref">10</a>]</span>. Ask the library (<a href="mailto:marx.reference@yale.edu">marx.reference@yale.edu</a>) what happens after that.</li>
+<li><strong>Approved for low-risk data only.</strong> Ask questions about published research. Don’t paste unpublished results, draft manuscripts or participant data <span class="citation" data-cites="yale-consensus">[<a href="#ref-yale-consensus" role="doc-biblioref">6</a>]</span>.</li>
 </ul>
 </section>
 <section id="what-it-does" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-does">What it does</h3>
 <ul>
-<li><strong>Search modes:</strong> Quick, Pro and Deep, which read roughly 10, 20 and 50 papers.</li>
-<li><strong>Consensus Meter:</strong> for yes/no questions (“Does X reduce Y?”), a bar showing how many papers lean Yes, Possibly, Mixed or No.</li>
-<li><strong>Study snapshots:</strong> population, sample size, methods and outcomes pulled from a paper.</li>
-<li><strong>Filters:</strong> study type (RCT, meta-analysis, systematic review), journal quartile, sample size, year.</li>
+<li><strong>Search modes:</strong> Quick, Pro and Deep, which read roughly 10, 20 and 50 papers <span class="citation" data-cites="yale-consensus">[<a href="#ref-yale-consensus" role="doc-biblioref">6</a>]</span>.</li>
+<li><strong>Consensus Meter:</strong> for yes/no questions (“Does X reduce Y?”), a bar showing how many papers lean Yes, Possibly, Mixed or No <span class="citation" data-cites="tay-consensus nnlm-consensus">[<a href="#ref-tay-consensus" role="doc-biblioref">2</a>, <a href="#ref-nnlm-consensus" role="doc-biblioref">11</a>]</span>.</li>
+<li><strong>Study snapshots:</strong> population, sample size, methods and outcomes pulled from a paper <span class="citation" data-cites="tay-consensus">[<a href="#ref-tay-consensus" role="doc-biblioref">2</a>]</span>.</li>
+<li><strong>Filters:</strong> study type (RCT, meta-analysis, systematic review), journal quartile, sample size, year <span class="citation" data-cites="tay-consensus lib-consensus-trial">[<a href="#ref-tay-consensus" role="doc-biblioref">2</a>, <a href="#ref-lib-consensus-trial" role="doc-biblioref">10</a>]</span>.</li>
 <li><strong>Full text or abstract?</strong> A checkmark on a citation means Consensus read the full text. No checkmark means it worked from the abstract only.</li>
-<li><strong>Access to paywalled papers:</strong> links open through Yale’s subscriptions.</li>
+<li><strong>Access to paywalled papers:</strong> links open through Yale’s subscriptions <span class="citation" data-cites="tay-consensus">[<a href="#ref-tay-consensus" role="doc-biblioref">2</a>]</span>.</li>
 </ul>
 </section>
 <section id="know-the-limits" class="level3">
@@ -458,7 +478,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Answers aren’t reproducible.</strong> The same question can give different answers in Pro and Deep mode, or on a different day.</li>
 <li><strong>Paid plans</strong> add more Pro and Deep searches. The free tier has monthly limits. Check current limits in the app.</li>
 </ul>
-<p>These limits are discussed in <a href="https://aarontay.substack.com/p/a-2025-deep-dive-of-consensus-promises">Aaron Tay’s review of Consensus</a> (2025) and in <a href="https://news.nnlm.gov/region_7/2026/05/06/consensus-ai-trial-at-yale-university/">CWML’s comparison of Consensus, OpenEvidence and UpToDate</a> (2026).</p>
+<p>These limits are discussed in Aaron Tay’s review of Consensus <span class="citation" data-cites="tay-consensus">[<a href="#ref-tay-consensus" role="doc-biblioref">2</a>]</span> and in CWML’s comparison of Consensus, OpenEvidence and UpToDate <span class="citation" data-cites="nnlm-consensus">[<a href="#ref-nnlm-consensus" role="doc-biblioref">11</a>]</span>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -482,7 +502,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="notebooklm" class="level2">
 <h2 class="anchored" data-anchor-id="notebooklm">NotebookLM</h2>
-<p><a href="https://notebooklm.google.com">NotebookLM</a> answers questions <strong>only from the sources you put in a notebook</strong>, and every answer links back to the passage it came from. It’s free with your Yale Google account and approved for moderate-risk data. (<a href="https://ai.yale.edu/yales-ai-tools-and-resources/google-gemini">Yale’s Gemini and NotebookLM page</a>)</p>
+<p><a href="https://notebooklm.google.com">NotebookLM</a> answers questions <strong>only from the sources you put in a notebook</strong>, and every answer links back to the passage it came from. It’s free with your Yale Google account and approved for moderate-risk data <span class="citation" data-cites="yale-gemini">[<a href="#ref-yale-gemini" role="doc-biblioref">7</a>]</span>.</p>
 <p>Good uses:</p>
 <ul>
 <li>Compare the methods, samples and measures across 5–20 papers you’ve already chosen</li>
@@ -501,15 +521,15 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <ul>
 <li><strong>Open-access papers</strong> (PubMed Central, preprints), your own manuscripts and your lab’s documents: yes, up to moderate risk.</li>
-<li><strong>PDFs you downloaded through Yale Library subscriptions: generally no.</strong> Publisher licenses usually forbid uploading their content to AI tools. See the library’s <a href="https://library.yale.edu/help-and-research-support/research-support/using-ai-research/ai-guidance-library-resources">AI guidance for library resources</a>.</li>
-<li><strong>Identifiable participant data: no.</strong> NotebookLM is approved for moderate risk only.</li>
+<li><strong>PDFs you downloaded through Yale Library subscriptions: generally no.</strong> Publisher licenses usually forbid uploading their content to AI tools. See the library’s AI guidance for library resources <span class="citation" data-cites="lib-ai-guidance">[<a href="#ref-lib-ai-guidance" role="doc-biblioref">12</a>]</span>.</li>
+<li><strong>Identifiable participant data: no.</strong> NotebookLM is approved for moderate risk only <span class="citation" data-cites="yale-gemini">[<a href="#ref-yale-gemini" role="doc-biblioref">7</a>]</span>.</li>
 </ul>
 </div>
 </div>
 </section>
 <section id="other-tools-you-may-hear-about" class="level2">
 <h2 class="anchored" data-anchor-id="other-tools-you-may-hear-about">Other tools you may hear about</h2>
-<p>Yale doesn’t provide these, so only use them with <strong>public information</strong> (low-risk data).</p>
+<p>Yale doesn’t provide these, so only use them with <strong>public information</strong> (low-risk data) <span class="citation" data-cites="yale-tools">[<a href="#ref-yale-tools" role="doc-biblioref">4</a>]</span>.</p>
 <table class="caption-top table">
 <caption>AI literature tools Yale doesn’t provide</caption>
 <thead>
@@ -544,9 +564,47 @@ ul.task-list li input[type="checkbox"] {
 </table>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Sources</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-cwml-evidence-synthesis" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><a href="https://library.medicine.yale.edu/evidence-synthesis-literature-reviews">Evidence Synthesis &amp; Literature Reviews</a>. Cushing/Whitney Medical Library.</div>
+</div>
+<div id="ref-tay-consensus" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline"><a href="https://aarontay.substack.com/p/a-2025-deep-dive-of-consensus-promises">A 2025 Deep Dive of Consensus: Promises and Pitfalls in AI-Powered Academic Search</a>. Aaron Tay’s Musings about Librarianship, November 15, 2025.</div>
+</div>
+<div id="ref-lib-connector-open" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline"><a href="https://library.yale.edu/news/yale-librarys-ai-connector-library-sources-now-open-yale-community-testing">Yale Library’s AI Connector to library sources now open to the Yale community for testing</a>. Yale Library.</div>
+</div>
+<div id="ref-yale-tools" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources">Yale’s AI Tools and Resources</a>. AI at Yale.</div>
+</div>
+<div id="ref-lib-connector-pilot" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline"><a href="https://library.yale.edu/news/yale-library-testing-ai-powered-connection-deeper-searching-library-resources">Yale Library is testing an AI-powered connection for deeper searching of library resources</a>. Yale Library.</div>
+</div>
+<div id="ref-yale-consensus" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/consensus">Consensus</a>. AI at Yale.</div>
+</div>
+<div id="ref-yale-gemini" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/google-gemini">Google Gemini for Education and NotebookLM</a>. AI at Yale.</div>
+</div>
+<div id="ref-claude-enterprise" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/posts/2026-09-15-now-available-claude-enterprise-licenses-at-yale">Now Available: Claude Enterprise Licenses at Yale</a>. AI at Yale, September 15, 2026.</div>
+</div>
+<div id="ref-clarity-update" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/posts/2026-11-18-clarity-update-new-web-search-and-preview-of-beta-agents">Clarity update: new web search and preview of beta agents</a>. AI at Yale, November 18, 2026.</div>
+</div>
+<div id="ref-lib-consensus-trial" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline"><a href="https://library.yale.edu/news/library-launches-year-long-trial-new-ai-powered-discovery-tool-research">Library launches year-long trial of new AI-powered discovery tool for research</a>. Yale Library, March 20, 2026.</div>
+</div>
+<div id="ref-nnlm-consensus" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline"><a href="https://news.nnlm.gov/region_7/2026/05/06/consensus-ai-trial-at-yale-university/">Consensus AI Trial at Yale University</a>. NNLM Region 7 Update, May 6, 2026.</div>
+</div>
+<div id="ref-lib-ai-guidance" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline"><a href="https://library.yale.edu/help-and-research-support/research-support/using-ai-research/ai-guidance-library-resources">AI Guidance for Library Resources</a>. Yale Library.</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -359,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="start-with-your-data" class="level2">
 <h2 class="anchored" data-anchor-id="start-with-your-data">Start with your data</h2>
-<p>Before choosing a tool, ask: <strong>what is the most sensitive thing I’m about to paste or upload?</strong> Then use a tool approved for that level. These are Yale’s data risk levels, from <a href="https://cybersecurity.yale.edu/data-classification">Yale’s data classification guidance</a> and the <a href="https://ai.yale.edu/yales-ai-tools-and-resources">ai.yale.edu tools list</a>.</p>
+<p>Before choosing a tool, ask: <strong>what is the most sensitive thing I’m about to paste or upload?</strong> Then use a tool approved for that level. These are Yale’s data risk levels and the tools Yale approves for each <span class="citation" data-cites="data-classification yale-tools">[<a href="#ref-data-classification" role="doc-biblioref">1</a>, <a href="#ref-yale-tools" role="doc-biblioref">2</a>]</span>.</p>
 <table class="caption-top table">
 <caption>Which Yale AI tools you may use, by data risk level</caption>
 <colgroup>
@@ -393,12 +413,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td><strong>ePHI</strong> (patient health information)</td>
 <td>Data covered by HIPAA</td>
-<td>Only <strong>Clarity’s Health agents</strong> (by request) or <strong>Claude Enterprise’s HIPAA environment</strong>, and only when it’s essential and covered by your IRB protocol</td>
+<td>Only <strong>Clarity’s Health agents</strong> (by request) or <strong>Claude Enterprise’s HIPAA environment</strong>, and only when it’s essential and covered by your IRB protocol <span class="citation" data-cites="clarity-health claude-enterprise ai-safely">[<a href="#ref-clarity-health" role="doc-biblioref">3</a>–<a href="#ref-ai-safely" role="doc-biblioref">5</a>]</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Not in any of these</strong></td>
 <td>NIST 800-171 controlled data; NIH controlled-access data (e.g., dbGaP)</td>
-<td>Check your data use agreement and ask first</td>
+<td>Check your data use agreement and ask first <span class="citation" data-cites="clarity-security nih-not-od-25-081">[<a href="#ref-clarity-security" role="doc-biblioref">6</a>, <a href="#ref-nih-not-od-25-081" role="doc-biblioref">7</a>]</span></td>
 </tr>
 </tbody>
 </table>
@@ -412,7 +432,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Personal ChatGPT, Gemini or Claude accounts, Perplexity, Elicit and similar tools are only for <strong>low-risk (public) data</strong>. Don’t paste unpublished results, manuscripts under review, grant applications you’re reviewing, or participant data into them.</p>
+<p>Personal ChatGPT, Gemini or Claude accounts, Perplexity, Elicit and similar tools are only for <strong>low-risk (public) data</strong>. Don’t paste unpublished results, manuscripts under review, grant applications you’re reviewing, or participant data into them. Treat anything you enter as if it will become public <span class="citation" data-cites="provost-guidelines yale-tools">[<a href="#ref-yale-tools" role="doc-biblioref">2</a>, <a href="#ref-provost-guidelines" role="doc-biblioref">8</a>]</span>.</p>
 </div>
 </div>
 </section>
@@ -462,9 +482,35 @@ ul.task-list li input[type="checkbox"] {
 <p>Created by Justin DeMayo at the <a href="https://library.medicine.yale.edu/">Cushing/Whitney Medical Library</a>, Yale School of Medicine. It replaces the earlier “Gaining Clarity on the AI Landscape at Yale” session. To book it for your group, or to send corrections, email <a href="mailto:justin.demayo@yale.edu?subject=AI%20Tools%20at%20Yale%20session">justin.demayo@yale.edu</a>.</p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Sources</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-data-classification" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><a href="https://cybersecurity.yale.edu/data-classification">Data Classification Guideline (1604 GD.01)</a>. Yale Cybersecurity.</div>
+</div>
+<div id="ref-yale-tools" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources">Yale’s AI Tools and Resources</a>. AI at Yale.</div>
+</div>
+<div id="ref-clarity-health" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/posts/2026-08-13-now-available-new-clarity-chatbots-approved-for-ephi-use-cases">Now Available: New Clarity Chatbots Approved for ePHI Use Cases</a>. AI at Yale, August 13, 2026.</div>
+</div>
+<div id="ref-claude-enterprise" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/posts/2026-09-15-now-available-claude-enterprise-licenses-at-yale">Now Available: Claude Enterprise Licenses at Yale</a>. AI at Yale, September 15, 2026.</div>
+</div>
+<div id="ref-ai-safely" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/health-sciences/using-ai-safely-and-responsibly-in-health-care">Using AI Safely and Responsibly in Health Care and Research</a>. AI at Yale.</div>
+</div>
+<div id="ref-clarity-security" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/security">Clarity Platform: Security</a>. AI at Yale.</div>
+</div>
+<div id="ref-nih-not-od-25-081" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline"><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-081.html">NOT-OD-25-081: Protecting Human Genomic Data when Developing Generative Artificial Intelligence Tools and Applications</a>. NIH Grants and Funding.</div>
+</div>
+<div id="ref-provost-guidelines" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline"><a href="https://provost.yale.edu/news/guidelines-use-generative-ai-tools">Guidelines for the Use of Generative AI Tools</a>. Yale Office of the Provost.</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

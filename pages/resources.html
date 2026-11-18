@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -364,11 +384,11 @@ The AI system that generates responses, such as GPT, Claude or Gemini. Each comp
 </dd>
 <dt>Agent</dt>
 <dd>
-In Clarity, a “featured agent” is a model with Yale’s settings, such as GPT or Claude Sonnet. More generally, an AI agent is a model that can take steps on its own: search, run code, use tools, and check its work.
+In Clarity, a “featured agent” is a model with Yale’s settings, such as GPT or Claude Sonnet <span class="citation" data-cites="clarity-agents">[<a href="#ref-clarity-agents" role="doc-biblioref">1</a>]</span>. More generally, an AI agent is a model that can take steps on its own: search, run code, use tools, and check its work.
 </dd>
 <dt>Prompt</dt>
 <dd>
-The instructions, question and material you give the AI.
+The instructions, question and material you give the AI <span class="citation" data-cites="glossary">[<a href="#ref-glossary" role="doc-biblioref">2</a>]</span>.
 </dd>
 <dt>Context window</dt>
 <dd>
@@ -376,11 +396,11 @@ How much text the model can work with at once: your prompt, uploaded files and t
 </dd>
 <dt>Hallucination</dt>
 <dd>
-A confident answer that’s false, such as a made-up citation, statistic or quote.
+A confident answer that’s false, such as a made-up citation, statistic or quote <span class="citation" data-cites="hallucinations">[<a href="#ref-hallucinations" role="doc-biblioref">3</a>]</span>.
 </dd>
 <dt>Web search (grounding)</dt>
 <dd>
-The model searches the web and bases its answer on what it finds, with links. Without it, answers come only from training data, which has a cutoff date.
+The model searches the web and bases its answer on what it finds, with links. Without it, answers come only from training data, which has a cutoff date <span class="citation" data-cites="hallucinations">[<a href="#ref-hallucinations" role="doc-biblioref">3</a>]</span>.
 </dd>
 <dt>Deep research</dt>
 <dd>
@@ -388,7 +408,7 @@ A mode that runs many searches, reads the results and writes a long report with 
 </dd>
 <dt>Token</dt>
 <dd>
-The unit models read and charge by. Roughly ¾ of an English word.
+The unit models read and charge by: a word or part of a word <span class="citation" data-cites="glossary">[<a href="#ref-glossary" role="doc-biblioref">2</a>]</span>.
 </dd>
 </dl>
 </section>
@@ -419,9 +439,20 @@ The unit models read and charge by. Roughly ¾ of an English word.
 <p>If you spot something out of date, email us at <a href="mailto:justin.demayo@yale.edu?subject=AI%20Tools%20at%20Yale%20correction">justin.demayo@yale.edu</a>.</p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Sources</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-clarity-agents" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/agents">Clarity Platform: Agents</a>. AI at Yale.</div>
+</div>
+<div id="ref-glossary" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/glossary">Clarity Glossary</a>. AI at Yale.</div>
+</div>
+<div id="ref-hallucinations" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/hallucinations">Hallucinations</a>. AI at Yale.</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

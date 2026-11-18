@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -358,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="five-parts-of-a-good-prompt" class="level2">
 <h2 class="anchored" data-anchor-id="five-parts-of-a-good-prompt">Five parts of a good prompt</h2>
-<p>You don’t need all five every time, but the more of them a prompt has, the less you’ll need to correct afterward.</p>
+<p>You don’t need all five every time, but the more of them a prompt has, the less you’ll need to correct afterward. The five parts are adapted from Yale’s Clarity prompting guide, which groups the same ideas as goal, context, source and expectations <span class="citation" data-cites="prompting-guide">[<a href="#ref-prompting-guide" role="doc-biblioref">1</a>]</span>.</p>
 <table class="caption-top table">
 <caption>Five parts of an effective prompt</caption>
 <colgroup>
@@ -405,31 +425,51 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="habits-that-help">Habits that help</h3>
 <ul>
 <li><strong>Let it ask you questions first.</strong> End with: “Before you start, ask me any questions you need answered.”</li>
-<li><strong>Iterate.</strong> Treat the first answer as a draft. Say what to change and why.</li>
-<li><strong>Give it the source.</strong> Paste or upload the document (if the data level allows) instead of asking from memory. Answers grounded in a source are more accurate.</li>
+<li><strong>Iterate.</strong> Treat the first answer as a draft. Say what to change and why <span class="citation" data-cites="prompting-guide">[<a href="#ref-prompting-guide" role="doc-biblioref">1</a>]</span>.</li>
+<li><strong>Give it the source.</strong> Paste or upload the document (if the data level allows) instead of asking from memory. Answers grounded in a source are more accurate <span class="citation" data-cites="prompting-guide">[<a href="#ref-prompting-guide" role="doc-biblioref">1</a>]</span>.</li>
 <li><strong>Ask for its uncertainty.</strong> “Which parts of this answer are you least sure about?”</li>
-<li><strong>Start a new chat for a new topic.</strong> Long chats drift, and earlier material can crowd out what matters now.</li>
-<li><strong>Save prompts that work.</strong> In Clarity you can turn a prompt you reuse into a custom agent.</li>
+<li><strong>Start a new chat for a new topic.</strong> Long chats drift, and earlier material can crowd out what matters now <span class="citation" data-cites="prompting-guide">[<a href="#ref-prompting-guide" role="doc-biblioref">1</a>]</span>.</li>
+<li><strong>Save prompts that work.</strong> In Clarity you can turn a prompt you reuse into a custom agent <span class="citation" data-cites="clarity-custom-agents">[<a href="#ref-clarity-custom-agents" role="doc-biblioref">2</a>]</span>.</li>
 </ul>
 </section>
 </section>
 <section id="check-before-you-use-it" class="level2">
 <h2 class="anchored" data-anchor-id="check-before-you-use-it">Check before you use it</h2>
-<p>AI output is a draft from a fast, confident assistant who is sometimes wrong. Before you use it:</p>
+<p>AI output is a draft from a fast, confident assistant who is sometimes wrong. You’re responsible for what you produce with it <span class="citation" data-cites="provost-guidelines hallucinations">[<a href="#ref-provost-guidelines" role="doc-biblioref">3</a>, <a href="#ref-hallucinations" role="doc-biblioref">4</a>]</span>. Before you use it:</p>
 <ul class="task-list">
-<li><label><input type="checkbox"><strong>Citations:</strong> does each reference exist, and does it say what’s claimed? Look it up in PubMed or the publisher’s site, not in the AI tool.</label></li>
-<li><label><input type="checkbox"><strong>Numbers:</strong> recalculate any statistic, dose or count that matters.</label></li>
+<li><label><input type="checkbox"><strong>Citations:</strong> does each reference exist, and does it say what’s claimed? Look it up in PubMed or the publisher’s site, not in the AI tool <span class="citation" data-cites="nih-reminder">[<a href="#ref-nih-reminder" role="doc-biblioref">5</a>]</span>.</label></li>
+<li><label><input type="checkbox"><strong>Numbers:</strong> recalculate any statistic, dose or count that matters <span class="citation" data-cites="hallucinations">[<a href="#ref-hallucinations" role="doc-biblioref">4</a>]</span>.</label></li>
 <li><label><input type="checkbox"><strong>Code:</strong> run it on test data where you know the right answer. Read what it does before running it on real data.</label></li>
-<li><label><input type="checkbox"><strong>Currency:</strong> is this information current? Models have a training cutoff unless they searched the web.</label></li>
+<li><label><input type="checkbox"><strong>Currency:</strong> is this information current? Models have a training cutoff unless they searched the web <span class="citation" data-cites="hallucinations">[<a href="#ref-hallucinations" role="doc-biblioref">4</a>]</span>.</label></li>
 <li><label><input type="checkbox"><strong>Omissions:</strong> what would an expert in your field add or push back on?</label></li>
-<li><label><input type="checkbox"><strong>Bias and framing:</strong> does the output stereotype a population or assume one point of view?</label></li>
-<li><label><input type="checkbox"><strong>Disclosure:</strong> do the funder or journal need to know you used AI for this?</label></li>
+<li><label><input type="checkbox"><strong>Bias and framing:</strong> does the output stereotype a population or assume one point of view <span class="citation" data-cites="hallucinations provost-guidelines">[<a href="#ref-provost-guidelines" role="doc-biblioref">3</a>, <a href="#ref-hallucinations" role="doc-biblioref">4</a>]</span>?</label></li>
+<li><label><input type="checkbox"><strong>Disclosure:</strong> do the funder or journal need to know you used AI for this <span class="citation" data-cites="nih-reminder icmje">[<a href="#ref-nih-reminder" role="doc-biblioref">5</a>, <a href="#ref-icmje" role="doc-biblioref">6</a>]</span>?</label></li>
 </ul>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Sources</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-prompting-guide" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/prompting-guide">Clarity Prompting Guide</a>. AI at Yale.</div>
+</div>
+<div id="ref-clarity-custom-agents" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/posts/2026-03-19-clarity-platform-now-supports-self-service-custom-agents">Clarity Platform now supports self-service Custom Agents</a>. AI at Yale, March 19, 2026.</div>
+</div>
+<div id="ref-provost-guidelines" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline"><a href="https://provost.yale.edu/news/guidelines-use-generative-ai-tools">Guidelines for the Use of Generative AI Tools</a>. Yale Office of the Provost.</div>
+</div>
+<div id="ref-hallucinations" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/hallucinations">Hallucinations</a>. AI at Yale.</div>
+</div>
+<div id="ref-nih-reminder" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline"><a href="https://www.grants.nih.gov/news-events/nih-extramural-nexus-news/2026/05/helpful-reminders-to-ensure-integrity-of-nih-supported-research-when-using-artificial-intelligence">Helpful Reminders to Ensure Integrity of NIH-Supported Research When Using Artificial Intelligence</a>. NIH Extramural Nexus, May 2026.</div>
+</div>
+<div id="ref-icmje" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline"><a href="https://icmje.acponline.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html">Use of AI by Authors</a>. ICMJE Recommendations.</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

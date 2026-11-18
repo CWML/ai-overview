@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -361,17 +381,22 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-short-version" class="level2">
 <h2 class="anchored" data-anchor-id="the-short-version">The short version</h2>
 <ol type="1">
-<li><strong>Match the tool to the data.</strong> Use only Yale-approved tools for anything beyond public information. See <a href="../index.html#start-with-your-data">Start with your data</a>.</li>
-<li><strong>You’re responsible for everything you submit.</strong> AI can’t be an author, and “the AI wrote it” isn’t a defense.</li>
-<li><strong>Check every citation.</strong> Presenting an AI-invented reference as real can be treated as fabrication.</li>
-<li><strong>Disclose AI use</strong> where the funder or journal asks for it.</li>
-<li><strong>Never use AI on someone else’s confidential work</strong> you’re reviewing: grant applications or manuscripts.</li>
+<li><strong>Match the tool to the data.</strong> Use only Yale-approved tools for anything beyond public information. See <a href="../index.html#start-with-your-data">Start with your data</a> <span class="citation" data-cites="yale-tools">[<a href="#ref-yale-tools" role="doc-biblioref">1</a>]</span>.</li>
+<li><strong>You’re responsible for everything you submit.</strong> AI can’t be an author, and “the AI wrote it” isn’t a defense <span class="citation" data-cites="icmje">[<a href="#ref-icmje" role="doc-biblioref">2</a>]</span>.</li>
+<li><strong>Check every citation.</strong> Presenting an AI-invented reference as real can be treated as fabrication <span class="citation" data-cites="nih-reminder">[<a href="#ref-nih-reminder" role="doc-biblioref">3</a>]</span>.</li>
+<li><strong>Disclose AI use</strong> where the funder or journal asks for it <span class="citation" data-cites="nih-reminder icmje">[<a href="#ref-icmje" role="doc-biblioref">2</a>, <a href="#ref-nih-reminder" role="doc-biblioref">3</a>]</span>.</li>
+<li><strong>Never use AI on someone else’s confidential work</strong> you’re reviewing: grant applications or manuscripts <span class="citation" data-cites="nih-not-od-23-149 jama">[<a href="#ref-nih-not-od-23-149" role="doc-biblioref">4</a>, <a href="#ref-jama" role="doc-biblioref">5</a>]</span>.</li>
 </ol>
 </section>
 <section id="nih" class="level2">
 <h2 class="anchored" data-anchor-id="nih">NIH</h2>
 <table class="caption-top table">
 <caption>NIH rules on AI use</caption>
+<colgroup>
+<col style="width: 26%">
+<col style="width: 44%">
+<col style="width: 29%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Rule</th>
@@ -383,34 +408,34 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Applications “substantially developed by AI” won’t be considered</td>
 <td>Write the science yourself. AI can help you edit, check or brainstorm, but NIH uses detection tools, and misuse found after an award can lead to referral to the Office of Research Integrity and to the award being suspended or terminated.</td>
-<td><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-132.html">NOT-OD-25-132</a></td>
+<td>NOT-OD-25-132 <span class="citation" data-cites="nih-not-od-25-132">[<a href="#ref-nih-not-od-25-132" role="doc-biblioref">6</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Six applications per PI per calendar year</td>
 <td>New, renewal, resubmission and revision applications count; T awards and R13s don’t.</td>
-<td><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-132.html">NOT-OD-25-132</a></td>
+<td>NOT-OD-25-132 <span class="citation" data-cites="nih-not-od-25-132">[<a href="#ref-nih-not-od-25-132" role="doc-biblioref">6</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>AI-invented references</td>
 <td>Presenting them as real “could constitute data fabrication.” Reckless AI use can be research misconduct. Describe how you used AI.</td>
-<td><a href="https://www.grants.nih.gov/news-events/nih-extramural-nexus-news/2026/05/helpful-reminders-to-ensure-integrity-of-nih-supported-research-when-using-artificial-intelligence">NIH reminder, May 2026</a></td>
+<td>NIH reminder, May 2026 <span class="citation" data-cites="nih-reminder">[<a href="#ref-nih-reminder" role="doc-biblioref">3</a>]</span></td>
 </tr>
 <tr class="even">
 <td>No AI in peer review</td>
 <td>Reviewers may not put any part of an application into an AI tool or use AI to write a critique.</td>
-<td><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-23-149.html">NOT-OD-23-149</a></td>
+<td>NOT-OD-23-149 <span class="citation" data-cites="nih-not-od-23-149">[<a href="#ref-nih-not-od-23-149" role="doc-biblioref">4</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>Controlled-access data</td>
 <td>Putting NIH controlled-access data (such as dbGaP) into public AI tools violates your Data Use Certification.</td>
-<td><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-081.html">NOT-OD-25-081</a></td>
+<td>NOT-OD-25-081 <span class="citation" data-cites="nih-not-od-25-081">[<a href="#ref-nih-not-od-25-081" role="doc-biblioref">7</a>]</span></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="journals" class="level2">
 <h2 class="anchored" data-anchor-id="journals">Journals</h2>
-<p>Most journals follow the <a href="https://icmje.acponline.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html">ICMJE recommendations on AI</a>:</p>
+<p>Most journals follow the ICMJE recommendations on AI <span class="citation" data-cites="icmje">[<a href="#ref-icmje" role="doc-biblioref">2</a>]</span>:</p>
 <ul>
 <li>AI tools can’t be listed as authors, or cited as a primary source.</li>
 <li>Disclose AI use, usually in the cover letter and in the Methods or Acknowledgments.</li>
@@ -418,8 +443,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Publishers add their own rules, and they change often. Recent examples:</p>
 <ul>
-<li><strong>Elsevier</strong> (updated August 2026): an AI declaration at submission; AI may <strong>not</strong> create or alter research images such as blots, microscopy or patient images. Basic grammar and spelling tools don’t need declaring. (<a href="https://www.elsevier.com/connect/updated-generative-ai-policies-for-journals-supporting-responsible-use-while-protecting-trust">Elsevier</a>)</li>
-<li><strong>JAMA Network</strong>: name the tool, version and maker; don’t use AI to generate reference lists; reviewers must not put manuscripts into AI tools. (<a href="https://jamanetwork.com/journals/jama/pages/instructions-for-authors">JAMA instructions for authors</a>)</li>
+<li><strong>Elsevier</strong> (updated August 2026): an AI declaration at submission; AI may <strong>not</strong> create or alter research images such as blots, microscopy or patient images. Basic grammar and spelling tools don’t need declaring <span class="citation" data-cites="elsevier">[<a href="#ref-elsevier" role="doc-biblioref">8</a>]</span>.</li>
+<li><strong>JAMA Network</strong>: name the tool, version and maker; don’t use AI to generate reference lists; reviewers must not put manuscripts into AI tools <span class="citation" data-cites="jama">[<a href="#ref-jama" role="doc-biblioref">5</a>]</span>.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -431,18 +456,18 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Read the specific journal’s “use of AI” section in its author instructions. Keep a short note of which tool you used, its version, the date and what you used it for, so the disclosure is easy to write.</p>
+<p>Read the specific journal’s “use of AI” section in its author instructions. Keep a short note of which tool you used, its version, the date and what you used it for, so the disclosure is easy to write <span class="citation" data-cites="jama icmje">[<a href="#ref-icmje" role="doc-biblioref">2</a>, <a href="#ref-jama" role="doc-biblioref">5</a>]</span>.</p>
 </div>
 </div>
 </section>
 <section id="yale" class="level2">
 <h2 class="anchored" data-anchor-id="yale">Yale</h2>
 <ul>
-<li><strong>Data classification:</strong> don’t put moderate- or high-risk data into tools not approved for that level. (<a href="https://your.yale.edu/policies-procedures/1604-data-classification-policy">Policy 1604</a>; <a href="https://yaledata.yale.edu/ai-guidelines-for-staff">AI guidelines</a>)</li>
-<li><strong>Patient data (PHI):</strong> use it in AI tools only when it’s essential and covered by your IRB protocol. Use the minimum needed; prefer de-identified or synthetic data. <strong>Removing names isn’t de-identification.</strong> A vendor saying “HIPAA-compliant” isn’t approval. (<a href="https://ai.yale.edu/yales-ai-tools-and-resources/health-sciences/using-ai-safely-and-responsibly-in-health-care">Using AI safely in health care</a>)</li>
-<li><strong>Library-licensed content:</strong> generally, don’t upload articles, e-books or database content from Yale Library subscriptions into AI tools. (<a href="https://library.yale.edu/help-and-research-support/research-support/using-ai-research/ai-guidance-library-resources">Library AI guidance</a>)</li>
-<li><strong>Data use agreements:</strong> a DUA may forbid AI processing even in an approved tool. Check before you upload.</li>
-<li><strong>Provost guidelines:</strong> assume what you enter in an unapproved tool could become public, and you’re responsible for what you produce. (<a href="https://provost.yale.edu/news/guidelines-use-generative-ai-tools">Provost guidelines</a>)</li>
+<li><strong>Data classification:</strong> don’t put moderate- or high-risk data into tools not approved for that level <span class="citation" data-cites="policy-1604 ai-guidelines-staff">[<a href="#ref-policy-1604" role="doc-biblioref">9</a>, <a href="#ref-ai-guidelines-staff" role="doc-biblioref">10</a>]</span>.</li>
+<li><strong>Patient data (PHI):</strong> use it in AI tools only when it’s essential and covered by your IRB protocol. Use the minimum needed; prefer de-identified or synthetic data. <strong>Removing names isn’t de-identification.</strong> A vendor saying “HIPAA-compliant” isn’t approval <span class="citation" data-cites="ai-safely">[<a href="#ref-ai-safely" role="doc-biblioref">11</a>]</span>.</li>
+<li><strong>Library-licensed content:</strong> generally, don’t upload articles, e-books or database content from Yale Library subscriptions into AI tools <span class="citation" data-cites="lib-ai-guidance">[<a href="#ref-lib-ai-guidance" role="doc-biblioref">12</a>]</span>.</li>
+<li><strong>Data use agreements:</strong> a DUA may forbid AI processing even in an approved tool. Check before you upload <span class="citation" data-cites="clarity-security">[<a href="#ref-clarity-security" role="doc-biblioref">13</a>]</span>.</li>
+<li><strong>Provost guidelines:</strong> assume what you enter in an unapproved tool could become public, and you’re responsible for what you produce <span class="citation" data-cites="provost-guidelines">[<a href="#ref-provost-guidelines" role="doc-biblioref">14</a>]</span>.</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -459,9 +484,53 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Sources</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-yale-tools" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources">Yale’s AI Tools and Resources</a>. AI at Yale.</div>
+</div>
+<div id="ref-icmje" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline"><a href="https://icmje.acponline.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html">Use of AI by Authors</a>. ICMJE Recommendations.</div>
+</div>
+<div id="ref-nih-reminder" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline"><a href="https://www.grants.nih.gov/news-events/nih-extramural-nexus-news/2026/05/helpful-reminders-to-ensure-integrity-of-nih-supported-research-when-using-artificial-intelligence">Helpful Reminders to Ensure Integrity of NIH-Supported Research When Using Artificial Intelligence</a>. NIH Extramural Nexus, May 2026.</div>
+</div>
+<div id="ref-nih-not-od-23-149" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline"><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-23-149.html">NOT-OD-23-149: The Use of Generative Artificial Intelligence Technologies is Prohibited for the NIH Peer Review Process</a>. NIH Grants and Funding.</div>
+</div>
+<div id="ref-jama" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline"><a href="https://jamanetwork.com/journals/jama/pages/instructions-for-authors">Instructions for Authors</a>. JAMA.</div>
+</div>
+<div id="ref-nih-not-od-25-132" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline"><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-132.html">NOT-OD-25-132: Supporting Fairness and Originality in NIH Research Applications</a>. NIH Grants and Funding.</div>
+</div>
+<div id="ref-nih-not-od-25-081" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline"><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-081.html">NOT-OD-25-081: Protecting Human Genomic Data when Developing Generative Artificial Intelligence Tools and Applications</a>. NIH Grants and Funding.</div>
+</div>
+<div id="ref-elsevier" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline"><a href="https://www.elsevier.com/connect/updated-generative-ai-policies-for-journals-supporting-responsible-use-while-protecting-trust">Generative AI policies for journals: Responsible use for authors</a>. Elsevier, August 18, 2026.</div>
+</div>
+<div id="ref-policy-1604" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline"><a href="https://your.yale.edu/policies-procedures/1604-data-classification-policy">1604 Data Classification Policy</a>. It’s Your Yale.</div>
+</div>
+<div id="ref-ai-guidelines-staff" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline"><a href="https://yaledata.yale.edu/ai-guidelines-for-staff">AI guidelines for staff</a>. Yale University Data Office.</div>
+</div>
+<div id="ref-ai-safely" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/health-sciences/using-ai-safely-and-responsibly-in-health-care">Using AI Safely and Responsibly in Health Care and Research</a>. AI at Yale.</div>
+</div>
+<div id="ref-lib-ai-guidance" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline"><a href="https://library.yale.edu/help-and-research-support/research-support/using-ai-research/ai-guidance-library-resources">AI Guidance for Library Resources</a>. Yale Library.</div>
+</div>
+<div id="ref-clarity-security" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[13] </div><div class="csl-right-inline"><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/security">Clarity Platform: Security</a>. AI at Yale.</div>
+</div>
+<div id="ref-provost-guidelines" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[14] </div><div class="csl-right-inline"><a href="https://provost.yale.edu/news/guidelines-use-generative-ai-tools">Guidelines for the Use of Generative AI Tools</a>. Yale Office of the Provost.</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
